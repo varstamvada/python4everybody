@@ -1,8 +1,8 @@
 # integersums.py
-def first(n):
-    num = 1
-    sum = 0
-    while num < n + 1:
-        sum = sum + num
-        num = num + 1
-    return sum
+
+def add_it_up(n):
+    try:
+        result = sum(range(n + 1))
+    except TypeError:
+        result = 0
+    return result
